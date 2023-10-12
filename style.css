@@ -1,0 +1,271 @@
+/* Site-wide pre-set styles */
+:root {
+  --snow: #dadff7;
+  --dark: #282728;
+  --night: #1F1E1F;
+  --bright: #7297FF;
+  --rounded: 15px;
+}
+
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+/* Header & Menu */
+header {
+  color: var(--night);
+  background-color: var(--snow);
+  min-height: 50px;
+  border-bottom: 1px solid var(--bright);
+  position: relative; 
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+
+nav li {
+  flex: 0 0 20px;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+/* Nav links have hover background */
+nav li:hover {
+  background-color: var(--bright);
+}
+
+/* Main & Body */
+body {
+  background-color: var(--night);
+}
+
+/* Resume Button in Nav - tool-tip text on hover & Opens resume in seperate tab */
+#resume-btn:hover::after {
+  content: "Hire me! (You won't regret it) ^-^";
+  color: var(--dark);
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: .8em;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+}
+
+/* Headings */
+h1 {
+  font-size: 30px;
+  color: var(--night);
+}
+
+h2 , h3, h5 {
+  font-size: 2em;
+  color: var(--snow);
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Images */
+img {
+  border-radius: var(--rounded);
+}
+
+/* About Section */
+#about {
+  min-height: 50vh;
+  padding: 60px;
+  color: var(--snow);
+  display: flex;
+}
+
+#about div {
+  margin-top: 30px;
+}
+
+#profile-photo {
+  width: 210px;
+  height: 210px;
+  margin: 30px;
+  border-radius: var(--rounded);
+  border: var(--bright) solid 2px;
+}
+
+#about p {
+  line-height: 1.2;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+/* Portfolio Section Styling */
+#portfolio {
+  background-color: var(--dark);
+  padding: 60px;
+}
+
+#portfolio-feature {
+  position: relative;
+  padding-top: 40px;
+  max-width: 1400px;
+}
+
+#portfolio-feature img {
+  width: 100%;
+  border: 2px solid var(--bright);
+}
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+.Qualification{
+  padding-bottom: 30px;
+}
+.skills{
+  border: 2px solid var(--bright);
+  border-radius: 15px;
+  padding-bottom: 20px;
+  color: white;
+  font: 1.1em sans-serif;
+  width: 60%;
+  height: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  /* justify-content: center; */
+align-items: center;
+}
+.skills li{
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  border: 2px solid var(--bright);
+}
+
+.portfolio-item {
+  flex: 0 0 48%;
+  position: relative;
+  padding-top: 40px;
+}
+
+/* Portfolio image HOVER Effects */
+.hover-image:hover {
+  filter: brightness(0.9);
+  transition: all .3s;
+}
+
+.portfolio-item:hover button {
+  color: #1F1E1F;
+  border: 2px solid #1F1E1F;
+  margin: 2px;
+  display: contents;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+/* Title Tags for portfolio images */
+.title-tag {
+  background-color: var(--bright);
+  width: 180px;
+  height: 60px;
+  border-radius: 0 5px 5px 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  padding: 10px;
+  z-index: 100;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px;
+  color: var(--snow);
+}
+
+#contact ul {
+  padding-top: 20px;
+}
+
+#contact li {
+  margin: 15px 0;
+}
+
+#contact a {
+  color: var(--snow);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: var(--bright);
+}
+
+/* Footer */
+footer {
+  color: var(--night);
+  background-color: var(--bright);
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Large Smartphones */
+@media screen and (max-width: 800px) {
+  #about {
+    flex-direction: column;
+  }
+  
+  .portfolio-item {
+    flex: 0 0 100%;
+  }
+
+}
+
+/* Small Smartphones */
+@media screen and (max-width: 600px) {
+  header {
+    min-height: 160px;
+  }
+
+  nav {
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+
+}

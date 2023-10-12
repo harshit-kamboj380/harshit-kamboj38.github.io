@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #80b0d9;
+            margin: 0;
+            padding: 0;
+            color: #34495E;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 40px;
+
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: -70px;
+            transition-duration: .3s;
+        }
+        .container:hover{
+            box-shadow: 5px 5px 5px 5px;
+        }
+        .info h2{
+            padding-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .info, .section-title, .education, .skills, .experience, .Objective {
+            margin-bottom: 20px;
+            padding: 10px;
+            transition-duration: .1s;
+        }
+        .info:hover, .Objective:hover, .education:hover, .skills:hover, .experience:hover{
+            /* border: .5px solid black; */
+            border-radius: 5px;
+            background-color:#a2bde6;
+            box-shadow: 5px, 5px, 5px, black;
+            color: black;
+            
+        }
+
+        .info h2 {
+            margin: 0;
+        }
+
+        .info p {
+            margin: 0;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .education,
+        .experience {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 600px){
+            .container{
+                /* background-color: black; */
+                width: 80vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harshit Kamboj</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <div class="container">
+        <div class="info">
+            <h2>Contact Information</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Website: www.yourwebsite.com</p>
+        </div>
+
+        <div class="Objective">
+            <h2>Objective</h2>
+            <p>This is where you can write a brief summary of your career objectives or goals.</p>
+        </div>
+
+        <div class="education">
+            <h2>Education</h2>
+            <h3>University Name</h3>
+            <p>Degree: Bachelor of Science in Computer Science</p>
+            <p>Graduation Year: 20XX</p>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Responsibility 1</li>
+                <li>Responsibility 2</li>
+                <li>Responsibility 3</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h2>Experience</h2>
+            <h3>Job Title</h3>
+            <p>Company Name</p>
+            <p>Duration: Month Year - Month Year</p>
+            <ul>
+                <li>Responsibility 1</li>
+                <li>Responsibility 2</li>
+                <li>Responsibility 3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
